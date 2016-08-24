@@ -19,21 +19,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="?attr/listPreferredItemPaddingStart"
+    android:layout_marginStart="?android:attr/listPreferredItemPaddingStart"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:gravity="center_vertical"
-    android:paddingStart="?attr/listPreferredItemPaddingStart"
-    android:paddingEnd="?attr/listPreferredItemPaddingEnd">
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
 
     <LinearLayout
-        android:id="@+android:id/icon_frame"
+        android:id="@+id/icon_frame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:minWidth="58dip"
         android:gravity="start|center_vertical"
         android:orientation="horizontal">
         <ImageView
-            android:id="@+android:id/icon"
+            android:id="@+id/icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dip" />
@@ -46,13 +46,13 @@
         android:paddingTop="16dip"
         android:paddingBottom="16dip">
 
-        <TextView android:id="@+android:id/title"
+        <TextView android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceListItem" />
 
-        <TextView android:id="@+android:id/summary"
+        <TextView android:id="@+id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@android:id/title"
@@ -68,7 +68,7 @@
             android:layout_below="@android:id/summary"
             android:layout_alignLeft="@android:id/summary">
             <TextView
-                android:id="@+android:id/monitor_box"
+                android:id="@+id/monitor_box"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:gravity="center_vertical"
@@ -76,7 +76,7 @@
                 android:textAppearance="?android:attr/textAppearanceListItemSecondary"
                 android:textColor="?android:attr/textColorSecondary" />
             <SeekBar
-                android:id="@+android:id/seek_bar"
+                android:id="@+id/seek_bar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:max="100"

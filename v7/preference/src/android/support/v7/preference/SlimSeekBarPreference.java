@@ -33,10 +33,10 @@ public class SlimSeekBarPreference extends Preference
     public SlimSeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-
+	
     @Override
-    protected View onCreateView(ViewGroup parent) {
-
+    public void onBindViewHolder(PreferenceViewHolder view) {
+        super.onBindViewHolder(view);
         View layout = View.inflate(getContext(),
                 R.layout.slider_preference, null);
 
@@ -46,7 +46,6 @@ public class SlimSeekBarPreference extends Preference
         bar.setOnSeekBarChangeListener(this);
         bar.setProgress(defaultValue);
 
-        return layout;
     }
 
     public void setInitValue(int progress) {
