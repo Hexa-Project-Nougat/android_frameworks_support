@@ -253,5 +253,10 @@
         <!-- Need a non-android: attr here so that gradle doesn't remove it -->
         <attr name="selectableItemBackground" />
     </declare-styleable>
+	
+    <!-- Base attributes available to SlimSeekBarPreference. -->
+    <declare-styleable name="SlimSeekBarPreference">
+        <!-- No added attributes at this time -->
+    </declare-styleable>
 
 </resources>

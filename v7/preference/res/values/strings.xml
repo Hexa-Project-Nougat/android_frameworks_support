@@ -2,4 +2,5 @@
 <resources>
     <string name="v7_preference_on">ON</string>
     <string name="v7_preference_off">OFF</string>
+	<string name="default_string">Default</string>
 </resources>
